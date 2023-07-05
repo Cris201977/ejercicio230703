@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="scss/index.css">
 </head>
 <body>
-    <header>
+    <header class="w-nav">
 <nav  class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
         <a class="navbar-brand" href="#">Home</a>
@@ -33,15 +33,17 @@
     </div>
 </nav>
     </header>
+    <div class="contenedor">
     <main>
         <h1>The Rolling Stones</h1>
+
         <article>
 
-            <p>The Rolling Stones, más conocido en el mundo hispanohablante como los Rolling Stones,2​ es un grupo
-                británico de rock originario de Londres. La banda fue formada en abril de 19623​ por Brian Jones, Mick
+            <p>The Rolling Stones, más conocido en el mundo hispanohablante como los Rolling Stones,​ es un grupo
+                británico de rock originario de Londres. La banda fue formada en abril de 1962​ por Brian Jones, Mick
                 Jagger, Keith Richards e Ian Stewart, junto a varios bajistas y bateristas que nunca permanecieron fijos
                 en la formación hasta la llegada de Bill Wyman y Charlie Watts, unos meses después, quienes completarían
-                la primera formación oficial de la banda.3​ </p>
+                la primera formación oficial de la banda.​ </p>
                 <p>Ian Stewart dejó de ser miembro oficial del grupo a mediados
                     de 1963, aunque permaneció en el mismo hasta su fallecimiento en 1985. Brian Jones fue despedido en
                     junio de 1969 debido a su adicción a las drogas (pero fallecería tres semanas después), y fue
@@ -57,10 +59,10 @@
                     <img src="images/imagen1.webp" class=" w-100" alt="Rolling Stones">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/imagen2.webp" class="w-100" alt="Rolling Stones">
+                    <img src="images/imagen5.webp" class="w-100" alt="Rolling Stones">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/images4.jpg" class="w-100" alt="Rolling Stones">
+                    <img src="images/imagen6.jpg" class="w-100" alt="Rolling Stones">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -74,12 +76,23 @@
         </div>
     </figure>
     </main>
-    <footer>
+    <div class="fomulario">
+        <p>Contacto</p>
         <form action="" id="contacto">
-            <input type="email" id="mail" placeholder="mail">
+            <div class="datos">
+            <input type="email" id="mail" placeholder="Email">
             <input type="text" id="nombre" placeholder="Nombre y apellido">
-            <textarea name="mensaje" id="msj" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <textarea name="mensaje" id="msj" cols="20" rows="5" placeholder="Mensaje"></textarea>
+            <div class="botones">
+            <input class="btn" id="enviar" type="submit" value="Enviar">
+            <input class="btn" id="limpiar" type="submit" value="Limpiar">
+            </div>
         </form>
+    </div>
+    </div>
+    <footer class="bg-body-tertiary">
+        <p>Cristian Ibáñez</p>
     </footer>
 </body>
 </html>

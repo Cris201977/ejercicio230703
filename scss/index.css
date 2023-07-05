@@ -1,37 +1,142 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+}
+
+.contenedor {
+  margin-top: 80px;
+  height: auto;
+  background-color: rgb(235, 103, 103);
+  padding: 5px;
+}
+
 figure {
   width: 100%;
   height: 100%;
 }
 
 article {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+  display: block;
+  background-color: rgb(242, 173, 173);
+  padding: 15px;
 }
 
 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  width: 70%;
   height: 100%;
 }
 
 .fotos {
-  height: 300px;
+  height: 250px;
   width: 100%;
 }
 
 main {
-  margin-top: 20px;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 60%;
-  grid-template-rows: 100px 300px 300px;
-  justify-content: center;
-  gap: 10px;
+  margin-top: 40px;
 }
 
 body {
   display: flex;
   flex-direction: column;
+}
+
+.fomulario {
+  height: 250px;
+  margin-top: 5px;
+  background-color: rgb(177, 20, 20);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fomulario p {
+  color: white;
+}
+
+#contacto {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60px 60px 40px;
+  grid-template-areas: "datos" "mensaje" "botones";
+  gap: 10px;
+}
+
+.datos {
+  grid-area: datos;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#msj {
+  grid-area: mensaje;
+}
+
+.botones {
+  grid-area: botones;
+  display: flex;
+  gap: 5px;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  width: 150px;
+}
+
+@media only screen and (min-width: 990px) {
+  article {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  main {
+    margin-top: 50px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: 100px 300px 300px;
+    justify-content: center;
+    gap: 10px;
+  }
+  #contacto {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 80px;
+    grid-template-areas: "datos mensaje botones";
+    gap: 10px;
+  }
+  .datos {
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #msj {
+    grid-area: mensaje;
+  }
+  .botones {
+    grid-area: botones;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .fomulario {
+    height: 150px;
+  }
 }/*# sourceMappingURL=index.css.map */
